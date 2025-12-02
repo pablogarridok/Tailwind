@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Gamer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+
+    <header class="bg-white shadow">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-indigo-600">Zona Gamer</h1>
+
+            <button id="temaBoton" class="px-3 py-1 bg-gray-200 rounded">
+                <span id="iconoTema">🌙</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="bg-indigo-600 text-white py-12">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-3">Juega, compite y aprende</h2>
+            <p class="mb-6">Un solo lugar para descubrir lanzamientos, torneos y guías rápidas. Suscríbete y recibe avisos antes que nadie.</p>
+
+            <a href="#catalogoJuegos" class="bg-white text-indigo-600 px-4 py-2 rounded font-semibold">Ver juegos</a>
+        </div>
+    </section>
+
+    <!--JUEGOS-->
+    <section id="catalogoJuegos" class="max-w-5xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-6">Catálogo</h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-white p-4 rounded shadow">
+                <div>
+                    <img src="img/fornite.png" alt="fonite">
+                </div>
+                <p class="font-semibold">Fortnite</p>
+                <p class="text-sm text-gray-600">Battle Royale</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow">
+                <div>
+                    <img src="img/valorant.png" alt="">
+                </div>
+                <p class="font-semibold">Valorant</p>
+                <p class="text-sm text-gray-600">Shooter táctico</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow">
+                <div>
+                    <img src="img/minecraft.png" alt="">
+                </div>
+                <p class="font-semibold">Minecraft</p>
+                <p class="text-sm text-gray-600">Sandbox</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow">
+                <div>
+                    <img src="img/ecFc25.png" alt="">
+                </div>
+                <p class="font-semibold">EA FC 25</p>
+                <p class="text-sm text-gray-600">Deportes</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow">
+                <div>
+                    <img src="img/genshin.png" alt="">
+                </div>
+                <p class="font-semibold">Genshin Impact</p>
+                <p class="text-sm text-gray-600">ARPG</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow">
+                <div>
+                    <img src="img/lol.png" alt="">
+                </div>
+                <p class="font-semibold">League of Legends</p>
+                <p class="text-sm text-gray-600">MOBA</p>
+            </div>
+        </div>
+    </section>
+
+    <!--CALENDARIO-->
+    <section class="bg-gray-200 py-10">
+        <div class="max-w-5xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-6">Torneos del mes</h2>
+
+            <div class="bg-white p-4 rounded shadow mb-3">
+                <p class="font-semibold">Apex - 12 Nov</p>
+                <p class="text-sm text-gray-700">Inscripción gratuita</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow mb-3">
+                <p class="font-semibold">EA FC - 16 Nov</p>
+                <p class="text-sm text-gray-700">Eliminación directa</p>
+            </div>
+
+            <div class="bg-white p-4 rounded shadow">
+                <p class="font-semibold">LoL - 23 Nov</p>
+                <p class="text-sm text-gray-700">Torneo amateur</p>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACTO-->
+    <section class="max-w-3xl mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-6">Formulario de contacto</h2>
+
+        <form id="formularioContacto" class="bg-white p-6 rounded shadow">
+            <label class="block mb-3">
+                <span class="font-semibold">Nombre</span>
+                <input type="text" class="mt-1 w-full border rounded px-3 py-2" required>
+            </label>
+
+            <label class="block mb-3">
+                <span class="font-semibold">Email</span>
+                <input type="email" class="mt-1 w-full border rounded px-3 py-2" required>
+            </label>
+
+            <label class="block mb-4">
+                <span class="font-semibold">Mensaje</span>
+                <textarea rows="4" class="mt-1 w-full border rounded px-3 py-2" required></textarea>
+            </label>
+
+            <button class="w-full bg-indigo-600 text-white py-2 rounded font-semibold">Enviar</button>
+        </form>
+    </section>
+
+    <!--PREGUNTAS-->
+    <section class="max-w-3xl mx-auto px-4 py-12">
+        <h2 class="text-2xl font-bold mb-6">Preguntas frecuentes</h2>
+
+        <details class="mb-4 bg-white p-4 rounded shadow">
+            <summary class="cursor-pointer font-semibold">
+                ¿Necesito registrarme para jugar?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2">
+                No, puedes ver los juegos y torneos sin registrarte. Solo pedimos datos si quieres participar.
+            </p>
+        </details>
+
+        <details class="mb-4 bg-white p-4 rounded shadow">
+            <summary class="cursor-pointer font-semibold">
+                ¿Los torneos tienen algún coste?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2">
+                La mayoría son gratuitos. Si alguno requiere pago, aparecerá indicado en su descripción.
+            </p>
+        </details>
+
+        <details class="bg-white p-4 rounded shadow">
+            <summary class="cursor-pointer font-semibold">
+                ¿Puedo enviar ideas o sugerencias?
+            </summary>
+            <p class="text-sm text-gray-700 mt-2">
+                Sí, en el formulario de contacto puedes enviar cualquier recomendación para mejorar la página.
+            </p>
+        </details>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-300 py-6 text-center">
+        © 2024 Zona Gamer
+    </footer>
+
+    <script>
+        const boton = document.getElementById("temaBoton");
+        const icono = document.getElementById("iconoTema");
+        const html = document.documentElement;
+
+        boton.addEventListener("click", () => {
+            html.classList.toggle("dark");
+
+            if (html.classList.contains("dark")) {
+                icono.textContent = "☀️";
+                document.body.classList.add("bg-gray-900", "text-white");
+            } else {
+                icono.textContent = "🌙";
+                document.body.classList.remove("bg-gray-900", "text-white");
+            }
+        });
+    </script>
+
+</body>
+</html>
